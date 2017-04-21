@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RecipeDefs>
+  <RecipeDef Name="SurgeryOrphan" ParentName="SurgeryFlesh" Abstract="True">
+    <!-- Easy recipe the skill of the colonist and quality/cleanliness of the room should not matters that much -->
+    <surgeonSurgerySuccessChanceExponent>0.9</surgeonSurgerySuccessChanceExponent>
+    <roomSurgerySuccessChanceFactorExponent>0.9</roomSurgerySuccessChanceFactorExponent>
+    <surgerySuccessChanceFactor>1.25</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.03</deathOnFailedSurgeryChance>
+    <workAmount>2000</workAmount>
+    <recipeUsers>
+      <li>Orphan</li>
+    </recipeUsers>
+    <skillRequirements>
+      <li>
+        <skill>Medicine</skill>
+        <minLevel>7</minLevel>
+      </li>
+    </skillRequirements>
+  </RecipeDef>
+  <!-- Injury: Burn -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjuryBurnOrphan</defName>
+    <label>cure burn</label>
+    <description>Cure burn.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s burn.</successfullyRemovedHediffMessage>
+    <jobString>Curing burn.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>Burn</removesHediff>
+  </RecipeDef>
+  <!-- Injury: Crush -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjuryCrushOni</defName>
+    <label>cure crush</label>
+    <description>Cure crush.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s crush.</successfullyRemovedHediffMessage>
+    <jobString>Curing crush.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>Crush</removesHediff>
+  </RecipeDef>
+  <!-- Injury: Crack -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjuryCrackOrphan</defName>
+    <label>cure crack</label>
+    <description>Cure crack.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s crack.</successfullyRemovedHediffMessage>
+    <jobString>Curing crack.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>Crack</removesHediff>
+  </RecipeDef>
+  <!-- Injury: Cut -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjuryCutOrphan</defName>
+    <label>cure cut</label>
+    <description>Cure cut.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s cut.</successfullyRemovedHediffMessage>
+    <jobString>Curing cut.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>Cut</removesHediff>
+  </RecipeDef>
+  <!-- Injury: SurgicalCut -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjurySurgicalCutOrphan</defName>
+    <label>cure surgical cut</label>
+    <description>Cure surgical cut.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s surgical cut.</successfullyRemovedHediffMessage>
+    <jobString>Curing surgical cut.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>SurgicalCut</removesHediff>
+  </RecipeDef>
+  <!-- Injury: Scratch -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjuryScratchOrphan</defName>
+    <label>cure scratch</label>
+    <description>Cure scratch.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s scratch.</successfullyRemovedHediffMessage>
+    <jobString>Curing scratch.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>Scratch</removesHediff>
+  </RecipeDef>
+  <!-- Injury: Bite -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjuryBiteOrphan</defName>
+    <label>cure bite</label>
+    <description>Cure bite.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s bite.</successfullyRemovedHediffMessage>
+    <jobString>Curing bite.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>Bite</removesHediff>
+  </RecipeDef>
+  <!-- Injury: Stab -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjuryStabOrphan</defName>
+    <label>cure stab</label>
+    <description>Cure stab.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s stab.</successfullyRemovedHediffMessage>
+    <jobString>Curing stab.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>Stab</removesHediff>
+  </RecipeDef>
+  <!-- Injury: Gunshot -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjuryGunshotOrphan</defName>
+    <label>cure gunshot</label>
+    <description>Cure gunshot.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s Gunshot.</successfullyRemovedHediffMessage>
+    <jobString>Curing gunshot.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>Gunshot</removesHediff>
+  </RecipeDef>
+  <!-- Injury: Shredded -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjuryShreddedOrphan</defName>
+    <label>cure shredded</label>
+    <description>Cure shredded.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s shredding.</successfullyRemovedHediffMessage>
+    <jobString>Curing shredded.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>Shredded</removesHediff>
+  </RecipeDef>
+  <!-- Injury: Bruise -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjuryBruiseOrphan</defName>
+    <label>cure bruise</label>
+    <description>Cure bruise.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s bruise.</successfullyRemovedHediffMessage>
+    <jobString>Curing bruise.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>Bruise</removesHediff>
+  </RecipeDef>
+  <!-- Injury: Frostbite -->
+  <RecipeDef ParentName="SurgeryOrphan">
+    <defName>CureInjuryFrostbiteOrphan</defName>
+    <label>cure frostbite</label>
+    <description>Cure frostbite.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <successfullyRemovedHediffMessage>{0} has successfully treated {1}'s frostbite.</successfullyRemovedHediffMessage>
+    <jobString>Curing frostbite.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <removesHediff>Frostbite</removesHediff>
+  </RecipeDef>
+</RecipeDefs>

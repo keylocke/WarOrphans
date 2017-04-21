@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RecipeDefs>
+  <RecipeDef Abstract="True" Name="SurgeryOrphanRP">
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Surgery</soundWorking>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <workSkill>Medicine</workSkill>
+    <workSkillLearnFactor>16</workSkillLearnFactor>
+    <recipeUsers>
+      <li>Orphan</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryOrphanRP">
+    <defName>RepairOrphan</defName>
+    <label>repair body</label>
+    <description>repair body.</description>
+    <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+    <jobString>repairing body.</jobString>
+    <workAmount>2000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+      <li>LeftClavicle</li>
+      <li>RightClavicle</li>
+      <li>Sternum</li>
+      <li>Rib</li>
+      <li>Pelvis</li>
+      <li>Spine</li>
+      <li>Stomach</li>
+      <li>Heart</li>
+      <li>LeftLung</li>
+      <li>RightLung</li>
+      <li>LeftKidney</li>
+      <li>RightKidney</li>
+      <li>Liver</li>
+      <li>Neck</li>
+      <li>Head</li>
+      <li>Skull</li>
+      <li>Brain</li>
+      <li>LeftEye</li>
+      <li>RightEye</li>
+      <li>LeftEar</li>
+      <li>RightEar</li>
+      <li>Nose</li>
+      <li>Jaw</li>
+	  <!--
+      <li>Horn</li>
+	  -->
+      <li>LeftHumerus</li>
+      <li>LeftRadius</li>
+      <li>LeftHand</li>
+      <li>RightShoulder</li>
+      <li>RightArm</li>
+      <li>RightHumerus</li>
+      <li>RightRadius</li>
+      <li>RightHand</li>
+      <li>LeftLeg</li>
+      <li>LeftFemur</li>
+      <li>LeftTibia</li>
+      <li>LeftFoot</li>
+      <li>RightLeg</li>
+      <li>RightFemur</li>
+      <li>RightTibia</li>
+      <li>RightFoot</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <li>
+        <skill>Medicine</skill>
+        <minLevel>10</minLevel>
+      </li>
+    </skillRequirements>
+  </RecipeDef>
+</RecipeDefs>

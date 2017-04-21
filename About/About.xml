@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+	<ModMetaData>
+		<name>War Orphans</name>
+		<author>keylocke</author>
+		<targetVersion>0.16.1393</targetVersion>
+		<description>
+these war orphans claim to be the children of the raiders you killed and turned into leather hats. however, everybody knows there are no kids in rimworld. dundundunnn.. 
+
+they're actually synth-noids (synth mechanoid infiltrators) they join to spy on you, then they eat your food and break your hearts. (they only eat human food)
+
+lifestages :
+-orphan : 0-4yrs (baby)
+-waif/urchin : 5-9yrs (juvenile)
+-maid/butler : 10-15yrs (juvenile late)
+-lady/lord : 16yrs-above (adult)
+
+they convert what they eat into chemfuel. 
+milking them gives you chemfuel. they excrete it like vomit. (adult lifestage)
+
+their mecha-organoid body sheds plasteel. 
+shearing them gives you plasteel. like peeling tree bark. (adult lifestage)
+
+butchering gives you steel, plasteel, components, meat, and leather. 
+(proof that they are machines disguised as humans)
+
+they produce mechanoid sounds while in combat. 
+(more proof of their mechanoidness)
+
+they are pack animals and can carry your stuffses when joining a caravan, so you can use them to smuggle and trade smokeleaf to neighboring factions or whatever.
+		</description>
+	</ModMetaData>
